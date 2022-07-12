@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+
+<head>
+<style>
+    .dataframe {
+        margin: auto;
+    }
+</style
+>
+</head>
+
+<body>
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Atomic Type</th>
+      <th>Description</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>br</td>
+      <td>any Br</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>c</td>
+      <td>sp2 C in C=O, C=S</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>c1</td>
+      <td>sp1 C</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>c2</td>
+      <td>sp2 C, aliphatic</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>c3</td>
+      <td>sp3 C</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ca</td>
+      <td>sp2 C, aromatic</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>cc(cd)</td>
+      <td>inner sp2 C in conjugated ring systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ce(cf)</td>
+      <td>inner sp2 C in conjugated chain systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>cl</td>
+      <td>any Cl</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>cp(cq)</td>
+      <td>bridge aromatic C</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>cu</td>
+      <td>sp2 C in three-memberred rings</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>cv</td>
+      <td>sp2 C in four-memberred rings</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>cx</td>
+      <td>sp3 C in three-memberred rings</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>cy</td>
+      <td>sp3 C in four-memberred rings</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>f</td>
+      <td>any F</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>h1</td>
+      <td>H on aliphatic C with 1 electron-withdrawing group</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>h2</td>
+      <td>H on aliphatic C with 2 electron-withdrawing groups</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>h3</td>
+      <td>H on aliphatic C with 3 electron-withdrawing groups</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>h4</td>
+      <td>H on aliphatic C with 4 electron-withdrawing groups</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>h5</td>
+      <td>H on aliphatic C with 5 electron-withdrawing groups</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>ha</td>
+      <td>H on aromatic C</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>hc</td>
+      <td>H on aliphatic C</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>hn</td>
+      <td>H on N</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>ho</td>
+      <td>H on O</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>hp</td>
+      <td>H on P</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>hs</td>
+      <td>H on S</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>i</td>
+      <td>any I</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>n</td>
+      <td>sp2 N in amide</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>n</td>
+      <td>aromatic nitrogen</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>n1</td>
+      <td>sp1 N</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>n2</td>
+      <td>sp2 N with 2 substituted double bond</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>n3</td>
+      <td>sp3 N with 3 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>n4</td>
+      <td>sp3 N with 4 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>na</td>
+      <td>sp2 N with 3 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>nb</td>
+      <td>inner sp2 N in conjugated ring systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>nc(nd)</td>
+      <td>inner sp2 N in conjugated chain systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>nh</td>
+      <td>amine N connected to the aromatic rings</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>no</td>
+      <td>N in nitro group</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>o</td>
+      <td>sp2 O in C=O, COO-</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>oh</td>
+      <td>sp3 O in hydroxyl group</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>os</td>
+      <td>sp3 O in ether and ester</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>p2</td>
+      <td>sp2 P (C=P etc)</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>p3</td>
+      <td>sp3 P, 3 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>p4</td>
+      <td>hypervalent P, 3 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>p5</td>
+      <td>hypervalent P, 4 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>pb</td>
+      <td>aromatic phosphorus</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>pc(pd)</td>
+      <td>inner sp2 P in conjugated ring systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>pe(pf)</td>
+      <td>inner sp2 P in conjugated chain systems</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>px</td>
+      <td>conjugated P, 3 substituted</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>py</td>
+      <td>conjugated P, 4 substituted</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>s2</td>
+      <td>sp2 S (p=S, C=S etc)</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>s4</td>
+      <td>hypervalent S, 3 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>s6</td>
+      <td>hypervalent S, 4 substituted</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>sh</td>
+      <td>sp3 S in thiol group</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>ss</td>
+      <td>sp3 S in -SR and SS</td>
+      <td>basic</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>sx</td>
+      <td>conjugated S, 3 substituted</td>
+      <td>special</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>sy</td>
+      <td>conjugated S, 4 substituted</td>
+      <td>special</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
